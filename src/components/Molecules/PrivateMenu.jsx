@@ -24,6 +24,9 @@ const PrivateMenu = () => {
         <NavLink to="/profesores">Profesores</NavLink>
       </li>
       <li>
+        <NavLink to="/notas">Notas</NavLink>
+      </li>
+      <li>
         <span onClick={() => removeToken()}>Cerrar Sesión</span>
       </li>
     </ul>

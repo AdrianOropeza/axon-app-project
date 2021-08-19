@@ -14,6 +14,7 @@ import Page404 from "./pages/Page404"
 import Protected from './routes/Protected';
 import Public from './routes/Public';
 import Footer from './Organisms/Footer';
+import Nota from './Organisms/Notes/Nota';
 
 const App = () => (
   <Router>
@@ -26,6 +27,7 @@ const App = () => (
       <Protected path="/cursos/:id" component={Course} />
       <Protected path="/profesores" exact component={Teachers} />
       <Protected path="/clase/:id"  component={Clase} />
+      <Protected path="/notas"  component={Nota} />
     
       <Public path="/login" exact component={Login} />
       <Public path="/register" exact component={Register}/>
